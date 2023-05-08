@@ -16,6 +16,7 @@
 		824BAB9C2A07D9BD0014194B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BAB9B2A07D9BD0014194B /* Pokemon.swift */; };
 		824BAB9E2A07E33D0014194B /* PokeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BAB9D2A07E33D0014194B /* PokeyTableViewCell.swift */; };
 		824BABA12A07E82F0014194B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 824BABA02A07E82F0014194B /* SDWebImage */; };
+		825A86F72A09276900334D1A /* PokeyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825A86F62A09276900334D1A /* PokeyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		824BAB912A07D2AB0014194B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824BAB9B2A07D9BD0014194B /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		824BAB9D2A07E33D0014194B /* PokeyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyTableViewCell.swift; sourceTree = "<group>"; };
+		825A86F62A09276900334D1A /* PokeyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				824BAB872A07D2A60014194B /* PokemonViewController.swift */,
 				824BAB9D2A07E33D0014194B /* PokeyTableViewCell.swift */,
+				825A86F62A09276900334D1A /* PokeyDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825A86F72A09276900334D1A /* PokeyDetailViewController.swift in Sources */,
 				824BAB882A07D2A60014194B /* PokemonViewController.swift in Sources */,
 				824BAB9C2A07D9BD0014194B /* Pokemon.swift in Sources */,
 				824BAB842A07D2A60014194B /* AppDelegate.swift in Sources */,
