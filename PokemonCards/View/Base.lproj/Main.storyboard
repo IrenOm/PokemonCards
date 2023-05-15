@@ -115,7 +115,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="VYc-aJ-m7d">
                         <barButtonItem key="rightBarButtonItem" image="repeat.circle" catalog="system" style="plain" id="paW-Rq-1Vh">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dZr-73-F7K">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dZr-73-F7K">
                                 <rect key="frame" x="290" y="5.6666666666666679" width="87" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -125,7 +125,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableViewOutlet" destination="iId-aX-G10" id="pQW-iT-V5A"/>
+                        <outlet property="tableViewOutlet" destination="iId-aX-G10" id="viV-9b-4Ob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

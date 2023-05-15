@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PokemonViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class PokemonViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Pokemon List"
+        getPokemonData()
     }
     
     //MARK: -getPokemonData
@@ -61,30 +63,26 @@ class PokemonViewController: UIViewController {
     
 }
     
-    extension PokemonViewController: UITableViewDelegate, UITableViewDataSource {
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return pokey.count
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PokeyTableViewCell else {
-                return UITableViewCell()
-            }
-            
-            let poke = pokey[indexPath.row]
-            cell.setupUI(withDataFrom: poke)
-            
-            return cell
-        }
-        
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 250
-        }
+extension PokemonViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pokey.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PokeyTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let poke = pokey[indexPath.row]
+        cell.setupUI(withDataFrom: poke)
+        
+        return cell
+    }
     
-    //MARK: - Navigation
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -96,5 +94,5 @@ class PokemonViewController: UIViewController {
             
         }
     }
-    
+}
 
